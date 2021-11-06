@@ -76,7 +76,19 @@
         android:layout_height="65dp"
         android:layout_marginStart="64dp"
         android:layout_marginBottom="124dp"
+        android:onClick="setRegisterBtnOnClick"
         android:text="@string/register_now"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_warringMessage"
+        android:layout_width="206dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="12dp"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/editText_Email"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

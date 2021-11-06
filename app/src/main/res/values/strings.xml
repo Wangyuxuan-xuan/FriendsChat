@@ -5,4 +5,5 @@
     <string name="password_hint">Password</string>
     <string name="register_now">Register now!</string>
     <string name="register_here">Register Here!</string>
+    <string name="warning">* All fields required!</string>
 </resources>
