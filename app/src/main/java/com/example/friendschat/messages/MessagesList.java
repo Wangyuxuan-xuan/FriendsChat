@@ -2,14 +2,15 @@ package com.example.friendschat.messages;
 
 public class MessagesList {
 
-    private String email , username , password;
+    private String email , username , password,profilePicture;
 
     private int unseenMessages;
 
-    public MessagesList(String email, String username, String password, int unseenMessages) {
+    public MessagesList(String email, String username, String password,String profilePicture, int unseenMessages) {
         this.email = email;
         this.username = username;
         this.password = password;
+        this.profilePicture=profilePicture;
         this.unseenMessages = unseenMessages;
     }
 
@@ -27,5 +28,9 @@ public class MessagesList {
 
     public int getUnseenMessages() {
         return unseenMessages;
+    }
+
+    public String getProfilePicture() {
+        return profilePicture;
     }
 }
