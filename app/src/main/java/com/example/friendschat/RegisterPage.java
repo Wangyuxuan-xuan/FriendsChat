@@ -49,15 +49,15 @@ public class RegisterPage extends AppCompatActivity {
         progressDialog.setCancelable(false);
         progressDialog.setMessage("Loading");
 
-        //check if user already logged in
-        if(!StoreData.getEmailData(this).isEmpty()){
-            Intent intent = new Intent(RegisterPage.this,MainActivity.class);
-            intent.putExtra("email",StoreData.getEmailData(this));
-            intent.putExtra("username",StoreData.getUsernameData(this));
-            intent.putExtra("password","");
-            startActivity(intent);
-            finish();
-        }
+//        //check if user already logged in
+//        if(!StoreData.getEmailData(this).isEmpty()){
+//            Intent intent = new Intent(RegisterPage.this,MainActivity.class);
+//            intent.putExtra("email",StoreData.getEmailData(this));
+//            intent.putExtra("username",StoreData.getUsernameData(this));
+//            intent.putExtra("password","");
+//            startActivity(intent);
+//            finish();
+//        }
     }
 
 
@@ -66,7 +66,6 @@ public class RegisterPage extends AppCompatActivity {
     public void  setRegisterBtnOnClick(View view){
 
         progressDialog.show();
-
 
         String email = editTextEmail.getText().toString();
         String username = editTextEmail.getText().toString();

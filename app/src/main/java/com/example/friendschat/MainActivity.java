@@ -53,10 +53,10 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 final String profilePictureUrl = snapshot.child("users").child("email").child("profile_pic").getValue(String.class);
 
-                if(!profilePictureUrl.isEmpty()){
-                    //set pic to imgView
-                    Picasso.get().load(profilePictureUrl).into(userProfilePicture);
-                }
+//                if(!profilePictureUrl.isEmpty()){
+//                    //set pic to imgView
+//                    Picasso.get().load(profilePictureUrl).into(userProfilePicture);
+//                }
 
 
                 progressDialog.dismiss();
